@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽選システム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>抽選システム</h1>
+        <div>
+            <label for="bgColorSelect">背景色を選択：</label>
+            <select id="bgColorSelect">
+                <option value="white">ホワイト</option>
+                <option value="black">ブラック</option>
+            </select>
+        </div>
+        <div>
+            <input type="text" id="nameInput" placeholder="参加者名を入力">
+            <button id="addButton">追加</button>
+        </div>
+        <ul id="participantsList"></ul>
+        <div>
+            <input type="number" id="numberInput" placeholder="選ぶ人数" min="1">
+            <button id="drawButton">抽選する</button>
+        </div>
+        <ul id="winnersList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
